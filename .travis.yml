@@ -1,5 +1,9 @@
+sudo : required
 language: java
 before_install:
+  - sudo add-apt-repository ppa:cwchien/gradle
+  - sudo apt-get update
+  - sudo apt-get install gradle
   - gradle setupCiWorkspace
 script:
   - gradle build
