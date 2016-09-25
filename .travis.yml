@@ -1,4 +1,5 @@
 language: java
-script:
+before_install:
   - gradle setupCiWorkspace
+script:
   - gradle build
